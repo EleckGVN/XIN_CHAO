@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện Media - Khoa CNTT IUH</title>
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="preload" href="css/site.css" as="style">
+    <link rel="preload" href="img/banner-1280.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="img/banner-768.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="img/banner-360.webp" as="image" fetchpriority="high">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/iuh.webp" alt="Logo Khoa CNTT IUH" width="120" height="40">
+        </a>
+        <nav aria-label="Menu chính">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="chuongtrinh.html">Chương trình</a></li>
+                <!-- Trang hiện tại gắn aria-current="page" -->
+                <li><a href="thuvien.html" aria-current="page">Thư viện</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Thư viện Đa phương tiện</h1>
+        <p>Khám phá không gian học tập và các hoạt động của sinh viên khoa CNTT.</p>
+
+        <!-- Yêu cầu B1.3: Thẻ figure/figcaption và picture 3 kích cỡ -->
+        <figure>
+            <picture>
+                <source media="(min-width: 1280px)" srcset="img/banner-1280.webp" alt="thuvien">
+                <source media="(min-width: 768px)" srcset="img/banner-768.webp" alt="thuvien">
+                <img class="i" src="img/banner-360.webp" alt="Sinh viên Khoa CNTT thực hành trong phòng Lab hiện đại" width="1280" height="500" loading="lazy">
+            </picture>
+            <figcaption>Hình 1: Không gian phòng thực hành máy tính chuẩn quốc tế của Khoa CNTT IUH.</figcaption>
+        </figure>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Khoa Công nghệ Thông tin - Trường Đại học Công nghiệp TP.HCM</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #2b2b2b;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #1f497d;
+    color: #ffffff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.a {
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+header nav a[aria-current="page"] {
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+footer {
+    background-color: #1f497d;
+    color: #ffffff;
+    text-align: center;
+    padding: 2px;
+    margin-top: 15px;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.i {
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, yellow, blue) 1;
+}
+
+figure {
+    margin: 0 0 20px 0;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #595959;
+    margin-top: 8px;
+}
+
+.video-wrap {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    background-color: #000000;
+}
+
+.video-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.video-controls button {
+    background-color: #1f497d;
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.video-controls progress {
+    flex: 1;
+    height: 12px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.gallery-card {
+    border: 1px solid #d3d3d3;
+    padding: 8px;
+    background-color: #f2f4f7;
+}
+
+.btn-load {
+    background-color: #1f497d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+@media (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1280px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
